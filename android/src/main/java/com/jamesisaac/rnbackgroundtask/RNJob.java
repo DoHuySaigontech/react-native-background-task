@@ -3,7 +3,6 @@ package com.jamesisaac.rnbackgroundtask;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import com.evernote.android.job.util.support.PersistableBundleCompat;
 import com.evernote.android.job.Job;
@@ -20,7 +19,6 @@ public class RNJob extends Job {
     private static final String TAG = "BackgroundTask";
 
     @Override
-    @NonNull
     protected Result onRunJob(Params params) {
         Log.d(TAG, "Job is running");
         PersistableBundleCompat requestExtras = params.getExtras();
